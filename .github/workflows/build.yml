@@ -22,6 +22,7 @@ jobs:
         run: |
           apt update
           apt install -y --no-install-recommends clang curl pkg-config
+          apt-get install ca-certificates
       - name: Set up Rust
         uses: actions-rs/toolchain@v1
         with:
